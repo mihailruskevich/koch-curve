@@ -2,9 +2,10 @@
 
 Koch curve representation using matplotlib.
 
-# Example
+# Examples
 
-![](koch.png "Koch curve")
+![](res/koch.png "Koch curve")
+![](res/koch-snowflake.png "Koch snowflake")
 
 # Prerequisites
 
