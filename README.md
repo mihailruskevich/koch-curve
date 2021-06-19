@@ -9,4 +9,4 @@ Koch curve representation using matplotlib.
 
 # Prerequisites
 
-* Python 3.8.1+
+* Python 3.9.5+

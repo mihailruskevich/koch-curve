@@ -56,7 +56,7 @@ class Line:
     def angle_point(self):
         return self.point_to_rotate().rotate(self.rotation_point(), ROTATION_ANGLE)
 
-    def transform_line(self):
+    def transform_line(self) -> list['Line']:
         return [
             Line(self.point_a, self.rotation_point()),
             Line(self.rotation_point(), self.angle_point()),
@@ -64,11 +64,11 @@ class Line:
             Line(self.point_to_rotate(), self.point_b)
         ]
 
-    def create_lines(self, lines, order: int):
+    def create_lines(self, lines: list['Line'], order: int) -> list['Line']:
         return lines if order <= 0 else self.create_lines(
             [v for line in lines for v in line.transform_line()],
             order - 1
         )
 
-    def koch_curve(self, order: int):
+    def koch_curve(self, order: int) -> list['Line']:
         return self.create_lines([self], order)
