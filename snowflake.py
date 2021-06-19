@@ -19,5 +19,6 @@ xy_points_list = map(lambda line: convert_lines(line.koch_curve(order)), lines)
 for xy_points in xy_points_list:
     plt.plot(*xy_points, c='g')
 
+plt.axis('scaled')
 plt.title(f'Koch Snowflake {order}')
 plt.show()
