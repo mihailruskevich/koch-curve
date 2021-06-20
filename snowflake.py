@@ -21,4 +21,5 @@ for xy_points in xy_points_list:
 
 plt.axis('scaled')
 plt.title(f'Koch Snowflake ({order=})')
+plt.savefig('res/koch-snowflake.png')
 plt.show()
