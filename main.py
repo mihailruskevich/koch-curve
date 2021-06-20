@@ -9,5 +9,5 @@ xy_points = convert_lines(koch_lines)
 
 plt.plot(*xy_points, c='g')
 plt.axis('scaled')
-plt.title(f'Koch {order}')
+plt.title(f'Koch ({order=})')
 plt.show()

@@ -20,5 +20,5 @@ for xy_points in xy_points_list:
     plt.plot(*xy_points, c='g')
 
 plt.axis('scaled')
-plt.title(f'Koch Snowflake {order}')
+plt.title(f'Koch Snowflake ({order=})')
 plt.show()
